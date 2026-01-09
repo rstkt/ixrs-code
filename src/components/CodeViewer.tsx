@@ -66,14 +66,14 @@ const CodeViewer = ({ project, isOpen, onClose }: CodeViewerProps) => {
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-border">
-            <div className="flex items-center gap-3">
-              <Code2 className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-3 min-w-0 flex-1">
+              <Code2 className="w-5 h-5 text-primary flex-shrink-0" />
               <h2 className="text-lg font-semibold text-foreground truncate">
                 {project.title}
               </h2>
             </div>
             
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-shrink-0">
               <button
                 onClick={handleDownload}
                 className="flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-lg bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-all duration-200"
