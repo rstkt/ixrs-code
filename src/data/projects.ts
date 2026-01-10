@@ -8,7 +8,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Distance Based Traffic Light System using Ultrasonic Sensor",
+    title: "01 Distance Based Traffic Light System using Ultrasonic Sensor",
     language: "C++ (Arduino)",
     code: `#define TRIG 9
 #define ECHO 10
